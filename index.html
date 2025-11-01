@@ -18,63 +18,123 @@
       <div class="blob blob--two"></div>
       <div class="blob blob--three"></div>
     </div>
-    <main class="layout">
-      <header class="hero">
-        <span class="badge">Glassmorphism 101</span>
-        <h1>Frosted glass for futuristic interfaces</h1>
-        <p>
-          Glassmorphism combines transparency, blur, and vivid gradients to
-          create depth while keeping content legible. It feels tactile yet
-          ethereal—perfect for dashboards, cards, and overlays.
-        </p>
-        <div class="hero__actions">
-          <button class="button button--primary">Explore components</button>
-          <button class="button button--ghost">Read guidelines</button>
-        </div>
+    <div class="page">
+      <header class="site-header">
+        <a class="site-header__brand" href="#overview">Glassmorphism UI</a>
+        <nav class="site-header__nav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#components">Components</a>
+          <a href="#principles">Principles</a>
+          <a href="#styleguide">HTML Styleguide</a>
+        </nav>
       </header>
 
-      <section class="cards">
-        <article class="glass-card">
-          <h2>Layered transparency</h2>
+      <main class="layout">
+        <section class="hero" id="overview">
+          <span class="badge">Glassmorphism 101</span>
+          <h1>Frosted glass for futuristic interfaces</h1>
           <p>
-            Build surfaces that sit on top of colorful backgrounds while letting
-            them shine through. Adjust opacity to hint at what's behind without
-            sacrificing clarity.
+            Glassmorphism combines transparency, blur, and vivid gradients to
+            create depth while keeping content legible. It feels tactile yet
+            ethereal—perfect for dashboards, cards, and overlays.
           </p>
-        </article>
-        <article class="glass-card">
-          <h2>Soft, diffused blur</h2>
-          <p>
-            Apply a backdrop filter to create a frosted effect. It softens
-            background noise and gives foreground content a polished feel.
-          </p>
-        </article>
-        <article class="glass-card">
-          <h2>Elevated lighting</h2>
-          <p>
-            Use luminous shadows and highlights to make elements feel lifted off
-            the canvas. Combine with subtle borders to reinforce the glass edges.
-          </p>
-        </article>
-      </section>
+          <div class="hero__actions">
+            <button class="button button--primary">Explore components</button>
+            <button class="button button--ghost">Read guidelines</button>
+          </div>
+        </section>
 
-      <section class="principles">
-        <h2>Key ingredients</h2>
-        <ul>
-          <li>
-            <strong>Colorful backdrop:</strong> A vibrant gradient or image to
-            refract through the translucent layers.
-          </li>
-          <li>
-            <strong>Transparent surface:</strong> Semi-opaque panels with
-            carefully tuned blur.
-          </li>
-          <li>
-            <strong>Defined edges:</strong> Hairline borders and inner glows to
-            emulate light catching on glass.
-          </li>
-        </ul>
-      </section>
-    </main>
+        <section class="cards" id="components">
+          <article class="glass-card">
+            <h2>Layered transparency</h2>
+            <p>
+              Build surfaces that sit on top of colorful backgrounds while letting
+              them shine through. Adjust opacity to hint at what's behind without
+              sacrificing clarity.
+            </p>
+          </article>
+          <article class="glass-card">
+            <h2>Soft, diffused blur</h2>
+            <p>
+              Apply a backdrop filter to create a frosted effect. It softens
+              background noise and gives foreground content a polished feel.
+            </p>
+          </article>
+          <article class="glass-card">
+            <h2>Elevated lighting</h2>
+            <p>
+              Use luminous shadows and highlights to make elements feel lifted off
+              the canvas. Combine with subtle borders to reinforce the glass edges.
+            </p>
+          </article>
+        </section>
+
+        <section class="principles" id="principles">
+          <h2>Key ingredients</h2>
+          <ul>
+            <li>
+              <strong>Colorful backdrop:</strong> A vibrant gradient or image to
+              refract through the translucent layers.
+            </li>
+            <li>
+              <strong>Transparent surface:</strong> Semi-opaque panels with
+              carefully tuned blur.
+            </li>
+            <li>
+              <strong>Defined edges:</strong> Hairline borders and inner glows to
+              emulate light catching on glass.
+            </li>
+          </ul>
+        </section>
+
+        <section class="styleguide" id="styleguide">
+          <h2>HTML tag styleguide</h2>
+          <p>
+            Maintain a consistent voice and hierarchy when composing content. Use
+            semantic tags to help users and assistive technologies understand the
+            structure of your interface.
+          </p>
+          <div class="styleguide__grid">
+            <article class="styleguide-card">
+              <h3>&lt;h1&gt;–&lt;h3&gt; Headings</h3>
+              <p>
+                Reserve <code>&lt;h1&gt;</code> for the page title. Use descending
+                levels to group related sections and avoid skipping ranks.
+              </p>
+            </article>
+            <article class="styleguide-card">
+              <h3>&lt;p&gt; Body Copy</h3>
+              <p>
+                Keep paragraphs concise and legible. Limit width to 60–70
+                characters to preserve comfortable reading rhythm.
+              </p>
+            </article>
+            <article class="styleguide-card">
+              <h3>&lt;ul&gt; Lists</h3>
+              <p>
+                Use unordered lists for guidelines or feature groupings. Provide a
+                clear lead-in sentence that frames each bullet.
+              </p>
+            </article>
+            <article class="styleguide-card">
+              <h3>&lt;a&gt; Links</h3>
+              <p>
+                Links should describe their destination. Pair them with accessible
+                hover and focus states for keyboard navigation.
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2024 Glassmorphism UI Demo. Crafted for exploration and learning.</p>
+        <div class="site-footer__links">
+          <a href="#overview">Back to top</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter" target="_blank" rel="noreferrer">Backdrop filter docs</a>
+          <a href="https://css-tricks.com/glassmorphism-in-user-interfaces/" target="_blank" rel="noreferrer">Design inspiration</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
