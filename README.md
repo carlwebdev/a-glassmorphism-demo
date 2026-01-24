@@ -22,3 +22,15 @@ file server to explore the design.
   - Examples and guidance on when glass-like surfaces support the UI hierarchy.
 - [MDN: backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter)
   - Technical reference for the CSS blur effect that powers glassmorphism.
+
+## Expansion ideas
+
+Based on the current hero, cards, principles, and styleguide sections, the demo
+could grow into a fuller UI kit by adding:
+
+- A glassmorphism sidebar or dock with quick actions and profile status.
+- Toast notifications and alert banners for layered overlays.
+- A modal or command palette using the native `<dialog>` element.
+- Frosted form controls (search, inputs, toggles, sliders) with focus states.
+- Data widgets such as KPI tiles, charts, or activity timelines.
+- A compact media player or calendar card to showcase dense layouts.

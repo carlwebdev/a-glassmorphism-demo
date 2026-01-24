@@ -28,6 +28,27 @@
           <a href="#principles">Principles</a>
           <a href="#styleguide">HTML Styleguide</a>
         </nav>
+        <button
+          class="site-header__menu-button"
+          type="button"
+          popovertarget="mobile-menu"
+          popovertargetaction="toggle"
+          aria-label="Toggle menu"
+          aria-controls="mobile-menu"
+          aria-haspopup="menu"
+        >
+          <span class="site-header__menu-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+        <nav class="site-header__menu" id="mobile-menu" popover aria-label="Mobile">
+          <a href="#overview">Overview</a>
+          <a href="#components">Components</a>
+          <a href="#principles">Principles</a>
+          <a href="#styleguide">HTML Styleguide</a>
+        </nav>
       </header>
 
       <main class="layout">
