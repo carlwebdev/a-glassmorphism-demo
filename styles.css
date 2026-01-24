@@ -294,6 +294,94 @@ body {
   line-height: 1.6;
 }
 
+.testimonials {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 28px;
+  padding: 2.5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonials__intro {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 56ch;
+}
+
+.testimonials__intro p {
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.testimonials__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 22px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  box-shadow: 0 18px 30px rgba(15, 23, 42, 0.28);
+  backdrop-filter: saturate(170%) blur(18px);
+  -webkit-backdrop-filter: saturate(170%) blur(18px);
+}
+
+.testimonial-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.testimonial-card__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  object-fit: cover;
+}
+
+.testimonial-card__name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.testimonial-card__role {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+}
+
+.testimonial-card__quote {
+  color: var(--muted-text);
+  line-height: 1.6;
+}
+
+.testimonial-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--muted-text);
+  font-size: 0.85rem;
+}
+
+.testimonial-card__tag {
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  color: var(--text-color);
+}
+
 .principles {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -440,6 +528,7 @@ strong {
   }
 
   .hero,
+  .testimonials,
   .principles,
   .styleguide {
     padding: 2rem;
