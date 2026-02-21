@@ -857,7 +857,6 @@ strong {
     --menu-offset: var(--menu-offset-sm);
   }
 
-  .site-header,
   .site-footer {
     flex-direction: column;
     align-items: flex-start;
@@ -875,11 +874,11 @@ strong {
     --footer-link-gap: var(--space-md);
   }
 
-  .site-header__nav {
+  .site-header .site-header__nav {
     display: none;
   }
 
-  .site-header__menu-button {
+  .site-header .site-header__menu-button {
     display: inline-flex;
   }
 
