@@ -238,5 +238,31 @@
         </div>
       </footer>
     </div>
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuLinks = mobileMenu ? mobileMenu.querySelectorAll("a[href^='#']") : [];
+
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const targetSelector = link.getAttribute("href");
+          if (!targetSelector) {
+            return;
+          }
+
+          const targetSection = document.querySelector(targetSelector);
+          if (!targetSection) {
+            return;
+          }
+
+          event.preventDefault();
+
+          if (mobileMenu && typeof mobileMenu.hidePopover === "function") {
+            mobileMenu.hidePopover();
+          }
+
+          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    </script>
   </body>
 </html>
